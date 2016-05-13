@@ -1,0 +1,8 @@
+<h1>회원가입 하는 페이지 입니다.</h1>
+<%= form_tag("/create", method:"get") do %>
+    <%= label_tag(:username,"ID:") %>
+    <%= text_field_tag(:username) %>
+    <%= label_tag(:password,"password:") %>
+    <%= password_field_tag(:password) %>
+    <%= submit_tag("가입하기") %>
+<% end %>
